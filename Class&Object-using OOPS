@@ -1,0 +1,34 @@
+class Employee{
+    int id;
+    String name;
+    String role;
+    double salary;
+    String company;
+    Employee(int id,String name,String role,double salary,String company){
+        this.id=id;
+        this.name=name;
+        this.role=role;
+        this.salary=salary;
+        this.company=company;
+       
+    }
+    public void display(){
+        System.out.println("Id is: " + this.id);
+        System.out.println("Name is: " + this.name);
+        System.out.println("Role is: " + this.role);
+        System.out.println("Salary is: " + this.salary);
+        System.out.println("Company is: " + this.company);
+        System.out.println();
+       
+       
+    }
+}
+class EmpData{
+    public static void main(String[] args){
+        Employee e1=new Employee(201,"Gouthami","Java dev",50000.9,"TCS");
+        Employee e2=new Employee(202,"Chowdary","python dev",40000.9,"TCS");
+       
+        e1.display();
+        e2.display();
+    }
+}
